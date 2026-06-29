@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import EmotionExpression from './pages/EmotionExpression'
 import EmotionGame from './pages/EmotionGame'
@@ -11,7 +11,7 @@ import Navigation from './components/Navigation'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen pb-20">
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -25,7 +25,7 @@ function App() {
         </Routes>
         <Navigation />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
